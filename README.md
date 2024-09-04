@@ -36,16 +36,16 @@ Face Clock In是一款基于Streamlit、OpenCV和psycopg2开发的人脸识别�
 
 ### 2.环境配置
 
-首先，确保你的机器机器安装了Python 3.8，并且可以正常连接到OpenGauss数据库
+首先，确保你的机器机器安装了Python 3.8，并且可以正常连接到OpenGauss数据库。
 
-接着拉取本项目的仓库
+接着拉取本项目的仓库。
 
 ```
 git clone https://github.com/crandomame/Face_ClockIn.git
 cd Face_ClockIn
 ```
 
-直接使用pip安装依赖即可，推荐使用虚拟环境
+直接使用pip安装依赖即可，推荐使用虚拟环境。
 
 ```
 pip install -r requirements.txt
@@ -86,7 +86,7 @@ python database.py
 
 ### 5.启动项目
 
-在命令行中输入以下代码即可运行本项目
+在命令行中输入以下代码即可运行本项目。
 
 ```
 streamlit run WebUI.py
@@ -94,4 +94,4 @@ streamlit run WebUI.py
 
 出现以下界面即为启动成功
 
-![main_mean](D:\dev\project\Face_ClockIn\image\main_mean.png)
+![loading-ag-153](./image/main_mean.png)
