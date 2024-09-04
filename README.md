@@ -1,4 +1,4 @@
-![logo](D:\dev\project\Face_ClockIn\image\logo.png)
+![loading-ag-130](./image/logo.png)
 
 # Face Clock In
 
@@ -83,5 +83,3 @@ streamlit run WebUI.py
 ```
 
 出现以下界面即为启动成功
-
-
