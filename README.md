@@ -1,4 +1,4 @@
-![loading-ag-130](./image/logo.png)![opengauss_history](D:\dev\project\Face_ClockIn\image\opengauss_history.png)
+![loading-ag-130](./image/logo.png)
 
 # Face Clock In
 
