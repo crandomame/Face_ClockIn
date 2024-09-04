@@ -27,6 +27,8 @@
   * [考勤打卡界面](#考勤打卡界面)
   
   * [打卡记录界面](#打卡记录界面)
+  
+  * [数据库界面](#数据库界面)
 
 ## 概述
 
@@ -96,7 +98,7 @@ python database.py
 
 ### 5.启动项目
 
-在命令行中输入以下代码即可运行本项目，出现主界面即为启动成功
+在命令行中输入以下代码即可运行本项目，出现主界面即为启动成功。
 
 ```
 streamlit run WebUI.py
@@ -110,16 +112,18 @@ streamlit run WebUI.py
 
 ### 新建用户界面
 
-![new_user](D:\dev\project\Face_ClockIn\image\new_user.png)
+人脸图片来自网络，侵权请联系作者删除。
 
-### 考勤打卡界面![clock_in](D:\dev\project\Face_ClockIn\image\clock_in.png)
+![loading-ag-197](./image/new_user.png)
 
-### 打卡记录界面![history](D:\dev\project\Face_ClockIn\image\history.png)
+### 考勤打卡界面![loading-ag-199](./image/clock_in.png)
+
+### 打卡记录界面![loading-ag-201](./image/history.png)
 
 ### 数据库界面
 
 此处采用DataStudio与OpenGauss连接，以下为employee和history表格中信息。
 
-![opengauss_employee](D:\dev\project\Face_ClockIn\image\opengauss_employee.png)
+![loading-ag-203](./image/opengauss_employee.png)
 
-![opengauss_employee](D:\dev\project\Face_ClockIn\image\opengauss_employee.png)
+![loading-ag-205](./image/opengauss_employee.png)
