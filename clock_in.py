@@ -35,7 +35,6 @@ def clock_in(key):
         cv2_img = cv2.imdecode(np.frombuffer(bytes_data, np.uint8), cv2.IMREAD_COLOR)
 
         if st.button("确认打卡", type="primary"):
-            # 将picture临时保存
             save_path = os.path.join("temp", f"clockin_{employeeid}.jpg")
             cv2.imwrite(save_path, cv2_img)
 
@@ -59,12 +58,12 @@ def clock_in(key):
             if os.path.exists(save_path):
                 os.remove(save_path)
 
-            if ret == 0 and score > 0.67:
+            issuccessful = (True if ret == 0 and score > 0.67 else False)
+
+            if issuccessful:
                 st.write("恭喜您，打卡成功！")
-                issuccessful = True
             else:
                 st.write("很遗憾，打卡失败！")
-                issuccessful = False
 
             execute_sql("INSERT INTO history "
                         "(time, id, similarity, name, issuccessful) "
