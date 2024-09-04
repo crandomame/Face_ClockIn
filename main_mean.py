@@ -1,14 +1,8 @@
 import streamlit as st
-import os
 
 
 def main_menu(key):
-    st.logo(
-        image=os.path.join("image", "github.jpg"),
-        link="https://github.com/crandomame"
-    )
-
-    st.markdown("<h1 style='text-align: center;'>欢迎使用FaceClockIn</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>欢迎使用Face Clock In</h1>", unsafe_allow_html=True)
 
     for i in range(3):
         st.markdown('<br>', unsafe_allow_html=True)

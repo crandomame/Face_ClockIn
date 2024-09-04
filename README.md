@@ -4,7 +4,19 @@
 
 ## 目录
 
+* [概述](#概述)
 
+* [快速上手](#快速上手)
+  
+  * [1.开发环境](#1.开发环境)
+  
+  * [2.环境配置](#2.环境配置)
+  
+  * [3.修改配置文件](#3.修改配置文件)
+  
+  * [4.数据库初始化](#4.数据库初始化)
+  
+  * [5.启动项目](#5.启动项目)
 
 ## 概述
 
@@ -16,15 +28,13 @@ Face Clock In是一款基于Streamlit、OpenCV和psycopg2开发的人脸识别�
 
 ## 快速上手
 
-### 环境简述
+### 1.开发环境
 
 1. 系统：Windows 11
 2. 环境：Python 3.8
 3. 第三方包：Streamlit、OpenCV、psycopg2等，详见requrements.txt
 
-### 环境安装
-
-#### 1.环境配置
+### 2.环境配置
 
 首先，确保你的机器机器安装了Python 3.8，并且可以正常连接到OpenGauss数据库
 
@@ -41,7 +51,7 @@ cd Face_ClockIn
 pip install -r requirements.txt
 ```
 
-#### 2.修改配置文件
+### 3.修改配置文件
 
 打开setting.py文件，内容如下：
 
@@ -64,7 +74,7 @@ SparkApi_config = {
 
 其中，opengauss_config即为连接OpenGauss数据库的配置信息，SparkApi_config为讯飞星火人脸比对API信息配置。讯飞星火人脸比对API可在讯飞开放平台免费获取，详见[控制台-讯飞开放平台 (xfyun.cn)](https://console.xfyun.cn/services/face_compare) 。
 
-#### 3.数据库初始化
+### 4.数据库初始化
 
 运行database.py即可初始化数据库。
 
@@ -74,7 +84,7 @@ python database.py
 
 初始化成功后可在命令行窗口看到数据库初始化成功的提示信息。
 
-#### 4.启动项目
+### 5.启动项目
 
 在命令行中输入以下代码即可运行本项目
 
@@ -83,3 +93,5 @@ streamlit run WebUI.py
 ```
 
 出现以下界面即为启动成功
+
+![main_mean](D:\dev\project\Face_ClockIn\image\main_mean.png)

@@ -16,19 +16,19 @@ def execute_sql(sql):
     dsn = "dbname={database} user={user} password={password} host={host} port={port} client_encoding={client_encoding}".format(
         **opengauss_config)
 
-    conn = psycopg2.connect(dsn)  # 连接数据库
-    cur = conn.cursor()  # 创建光标：
+    conn = psycopg2.connect(dsn)
+    cur = conn.cursor()
 
-    cur.execute(sql)  # 执行SQL指令
+    cur.execute(sql)
 
     if sql.lower().startswith("select"):
         result = cur.fetchall()
     else:
         result = None
 
-    conn.commit()  # 提交事务
-    cur.close()  # 关闭光标：
-    conn.close()  # 关闭数据库连接：
+    conn.commit()
+    cur.close()
+    conn.close()
 
     return result
 

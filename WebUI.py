@@ -10,8 +10,11 @@ if "is_init" not in st.session_state:
     st.session_state.is_init = True
 
 if __name__ == "__main__":
+    st.logo(
+        image=os.path.join("image", "github.png"),
+        link="https://github.com/crandomame"
+    )
 
-    # 侧栏
     with st.sidebar:
         st.image(
             os.path.join("image", "logo.png"),
@@ -22,7 +25,6 @@ if __name__ == "__main__":
             unsafe_allow_html=True,
         )
 
-        # 添加空行作为间距
         st.markdown('<br>', unsafe_allow_html=True)
 
         pages = {
@@ -47,12 +49,10 @@ if __name__ == "__main__":
 
         selected_page = option_menu(
             menu_title="",
-            # menu_icon="cast",
             options=options,
             icons=icons,
             default_index=-1,
             styles={
-                # "icon": {"color": "blue"},
                 "nav-link-selected": {"background-color": "blue"},
             },
         )
