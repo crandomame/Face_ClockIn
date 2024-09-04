@@ -1,4 +1,4 @@
-![loading-ag-130](./image/logo.png)
+![loading-ag-130](./image/logo.png)![opengauss_history](D:\dev\project\Face_ClockIn\image\opengauss_history.png)
 
 # Face Clock In
 
@@ -122,8 +122,12 @@ streamlit run WebUI.py
 
 ### 数据库界面
 
-此处采用DataStudio与OpenGauss连接，以下为employee和history表格中信息。
+此处采用DataStudio与OpenGauss连接，以下分别为employee和history表格中信息。
+
+employee表格
 
 ![loading-ag-203](./image/opengauss_employee.png)
 
-![loading-ag-205](./image/opengauss_employee.png)
+history表格
+
+![loading-ag-209](./image/opengauss_history.png)
