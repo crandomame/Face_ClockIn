@@ -8,6 +8,7 @@ def database_init():
            "(Time TIMESTAMP PRIMARY KEY, ID VARCHAR, Name VARCHAR,"
            "Similarity FLOAT(2), IsSuccessful BOOLEAN, FOREIGN KEY (ID) REFERENCES Employee(ID));")
     result = execute_sql(sql)
+    print("数据库初始化成功！")
     return result
 
 
