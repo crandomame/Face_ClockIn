@@ -1,5 +1,5 @@
-#face/
-#temp/
+face/
+temp/
 .idea/
 __pycache__/
-# setting.py
+setting.py
