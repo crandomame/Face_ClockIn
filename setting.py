@@ -9,6 +9,6 @@ opengauss_config = {
 
 SparkApi_config = {
     'appid': '1a6f8b4c',
-    'apikey': 'MGM1YjE4N2Q2N2ZjMTNlM2YwNThkNWIz',
-    'apisecret': 'e7cad2b672892d786812c42a48e7ab82',
+    'apisecret': 'MGM1YjE4N2Q2N2ZjMTNlM2YwNThkNWIz',
+    'apikey': 'e7cad2b672892d786812c42a48e7ab82',
 }

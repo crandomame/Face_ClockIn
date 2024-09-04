@@ -18,6 +18,16 @@
   
   * [5.启动项目](#5.启动项目)
 
+* [功能展示](#功能展示)
+  
+  * [主界面](#主界面)
+  
+  * [新建用户界面](#新建用户界面)
+  
+  * [考勤打卡界面](#考勤打卡界面)
+  
+  * [打卡记录界面](#打卡记录界面)
+
 ## 概述
 
 Face Clock In是一款基于Streamlit、OpenCV和psycopg2开发的人脸识别考勤远程打卡系统，部署简单，使用方便，采用纯Python语言编写。
@@ -31,7 +41,7 @@ Face Clock In是一款基于Streamlit、OpenCV和psycopg2开发的人脸识别�
 ### 1.开发环境
 
 1. 系统：Windows 11
-2. 环境：Python 3.8
+2. 环境：Python 3.8，OpenGauss 5.0.2
 3. 第三方包：Streamlit、OpenCV、psycopg2等，详见requrements.txt
 
 ### 2.环境配置
@@ -86,12 +96,30 @@ python database.py
 
 ### 5.启动项目
 
-在命令行中输入以下代码即可运行本项目。
+在命令行中输入以下代码即可运行本项目，出现主界面即为启动成功
 
 ```
 streamlit run WebUI.py
 ```
 
-出现以下界面即为启动成功
+## 功能展示
+
+### 主界面
 
 ![loading-ag-153](./image/main_mean.png)
+
+### 新建用户界面
+
+![new_user](D:\dev\project\Face_ClockIn\image\new_user.png)
+
+### 考勤打卡界面![clock_in](D:\dev\project\Face_ClockIn\image\clock_in.png)
+
+### 打卡记录界面![history](D:\dev\project\Face_ClockIn\image\history.png)
+
+### 数据库界面
+
+此处采用DataStudio与OpenGauss连接，以下为employee和history表格中信息。
+
+![opengauss_employee](D:\dev\project\Face_ClockIn\image\opengauss_employee.png)
+
+![opengauss_employee](D:\dev\project\Face_ClockIn\image\opengauss_employee.png)

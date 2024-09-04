@@ -40,6 +40,7 @@ def clock_in(key):
 
             name = execute_sql(f"SELECT name FROM employee WHERE id = {employeeid};")
             print(name[0][0])
+            print(employeeid)
 
             if not name:
                 st.write("没有查询到此ID，请检查后重新打卡！")
@@ -51,12 +52,12 @@ def clock_in(key):
                 appid=SparkApi_config['appid'],
                 apisecret=SparkApi_config['apisecret'],
                 apikey=SparkApi_config['apikey'],
-                img1_path=os.path.join("face", "employee_{}.jpg".format(employeeid)),
+                img1_path=os.path.join("face", f"employee_{employeeid}.jpg"),
                 img2_path=save_path,
             )
 
-            if os.path.exists(save_path):
-                os.remove(save_path)
+            # if os.path.exists(save_path):
+            #     os.remove(save_path)
 
             issuccessful = (True if ret == 0 and score > 0.67 else False)
 
