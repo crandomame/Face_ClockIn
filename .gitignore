@@ -1,0 +1,5 @@
+face/*
+temp/*
+.idea/
+__pycache__/
+setting.py

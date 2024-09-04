@@ -22,7 +22,6 @@ class Url:
         pass
 
 
-# 进行sha256加密和base64编码
 def sha256base64(data):
     sha256 = hashlib.sha256()
     sha256.update(data)
@@ -49,18 +48,13 @@ def assemble_ws_auth_url(requset_url, method="GET", api_key="", api_secret=""):
     path = u.path
     now = datetime.now()
     date = format_date_time(mktime(now.timetuple()))
-    # date = "Thu, 12 Dec 2019 01:57:27 GMT"
     signature_origin = "host: {}\ndate: {}\n{} {} HTTP/1.1".format(host, date, method, path)
 
     signature_sha = hmac.new(api_secret.encode('utf-8'), signature_origin.encode('utf-8'),
                              digestmod=hashlib.sha256).digest()
     signature_sha = base64.b64encode(signature_sha).decode(encoding='utf-8')
-    authorization_origin = "api_key=\"%s\", algorithm=\"%s\", headers=\"%s\", signature=\"%s\"" % (
-        api_key, "hmac-sha256", "host date request-line", signature_sha)
+    authorization_origin = f"api_key={api_key}, algorithm='hmac-sha256', headers='host date request-line', signature={signature_sha}"
     authorization = base64.b64encode(authorization_origin.encode('utf-8')).decode(encoding='utf-8')
-    # print(date)
-    # print(signature_origin)
-    # print(authorization_origin)
     values = {
         "host": host,
         "date": date,
