@@ -48,7 +48,7 @@ Face Clock In是一款基于Streamlit、OpenCV和psycopg2开发的人脸识别�
 
 ### 2.环境配置
 
-首先，确保你的机器机器安装了Python 3.8，并且可以正常连接到OpenGauss数据库。
+首先，确保你的机器安装了Python 3.8，并且可以正常连接到OpenGauss数据库。
 
 接着拉取本项目的仓库。
 
